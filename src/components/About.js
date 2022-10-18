@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/about.png";
+import pdfFile from "../assets/Code_a_program.pdf";
 
 const About = () => {
   const info = [
@@ -36,7 +37,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="./src/assets/Code_a_program.pdf" download>
+              <a href={pdfFile}>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>
