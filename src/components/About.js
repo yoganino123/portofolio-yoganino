@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/about.png";
-import pdfFile from "../assets/Code_a_program.pdf";
+import pdfFile from "../assets/CV_RahardianYoganino.pdf";
 
 const About = () => {
   const info = [
