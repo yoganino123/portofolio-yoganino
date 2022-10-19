@@ -44,7 +44,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center ">
             <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
               <img
                 src={aboutImg}
