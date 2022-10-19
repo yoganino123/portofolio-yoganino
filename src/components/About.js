@@ -21,10 +21,18 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-900 dark:text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+                No Stack to Fullstack!
+                <br />
+                Hello!, my name is
+                <span className="text-cyan-600">
+                  {" "}
+                  Rahardian Yoganino Pradipta
+                </span>{" "}
+                you can call me <span className="text-cyan-600">Dino</span>, i
+                am a graduate from Dian Nuswantoro University, Faculty of
+                Computer Science, Majoring in Informatics Engineering, and i
+                joined Flutter Bootcamp at PT. Code Development Indonesia, which
+                has Fullstack Web and Mobile Development expertise
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
