@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
+  // const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const menuLinks = [
     {
@@ -16,28 +16,24 @@ const Navbar = () => {
       name: "SKILLS",
       link: "#skills",
     },
-    // {
-    //   name: "PROJECTS",
-    //   link: "#projects",
-    // },
+    {
+      name: "PROJECTS",
+      link: "#projects",
+    },
     // {
     //   name: "CONTACT",
     //   link: "#contact",
     // },
   ];
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
-      window.scrollY > 0 ? setSticky(true) : setSticky(false);
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     const nav = document.querySelector("nav");
+  //     window.scrollY > 0 ? setSticky(true) : setSticky(false);
+  //   });
+  // }, []);
   return (
-    <nav className={`fixed w-full left-0 top-0 z-[999] `}>
-      {/* untuk classname atas jika sticky ${
-        sticky
-          ? "md:bg-gray-900 dark:md:bg-gray-100  text-gray-100 dark:text-gray-900"
-          : ""
-      } */}
+    <nav className="fixed w-full left-0 top-0 z-[999]">
+      {/* WEB DIMENSION */}
       <div className="flex items-center justify-between">
         {/* LOGO TEXT  */}
         <div className="mx-7">
@@ -55,6 +51,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
         {/* Mobile Dimension Nav */}
         <div
           onClick={() => setOpen(!open)}
