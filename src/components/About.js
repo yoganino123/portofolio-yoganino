@@ -1,11 +1,11 @@
 import React from "react";
-import aboutImg from "../assets/about.png";
-import pdfFile from "../assets/CV_RahardianYoganino.pdf";
+import aboutImg from "../assets/about2.png";
+// import pdfFile from "../assets/CV_RahardianYoganino.pdf";
 
 const About = () => {
   const info = [
-    { text: "Years experience", count: "01" },
-    { text: "Completed Projects", count: "3" },
+    { text: "Years experience", count: "02" },
+    { text: "Completed Projects", count: "10" },
     { text: "Companies Work", count: "06" },
   ];
   return (
@@ -30,10 +30,12 @@ const About = () => {
                 </span>{" "}
                 you can call me <span className="text-cyan-600">Dino</span>, i
                 am a graduate from Dian Nuswantoro University, Faculty of
-                Computer Science, Majoring in Informatics Engineering, and i
-                joined Flutter Bootcamp at PT. Code Development Indonesia, which
-                has Fullstack Web and Mobile Development expertise
+                Computer Science, Majoring in Informatics Engineering, and I'm
+                currently working at PT Woori Finance Indonesia Tbk. as a
+                Software Developer. You can contact me via social media or email
+                yoganinorahardian@gmail.com
               </p>
+
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
@@ -46,10 +48,11 @@ const About = () => {
                 ))}
               </div>
               <br />
+
               <br />
-              <a href={pdfFile} download>
+              {/* <a href={pdfFile} download>
                 <button className="btn-primary">Download CV</button>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center ">

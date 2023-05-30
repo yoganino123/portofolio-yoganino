@@ -1,6 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/projects1.png";
+import project2 from "../assets/projects2.png";
+import project3 from "../assets/projects3.png";
 import project_person from "../assets/project-person.png";
 
 import "swiper/css";
@@ -14,6 +16,14 @@ const Project = () => {
       name: "Spotify Clone",
       github_link: "https://github.com/yoganino123/Spotify-Clone",
       live_link: "https://yoganino-lyriks-app.netlify.app/",
+    },
+    {
+      img: project2,
+      name: "WFI Assets Management System",
+    },
+    {
+      img: project3,
+      name: "WFI RestFull API",
     },
   ];
   return (
@@ -51,22 +61,26 @@ const Project = () => {
                   <h3 className="text-xl my-4 text-gray-900 dark:text-gray-100">
                     {project_info.name}
                   </h3>
-                  <div className="flex gap-3">
-                    <a
-                      href={project_info.github_link}
-                      target="_blank"
-                      className="dark:text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={project_info.live_link}
-                      target="_blank"
-                      className="dark:text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Live Demo
-                    </a>
-                  </div>
+                  {project_info.github_link && project_info.live_link ? (
+                    <div className="flex gap-3">
+                      <a
+                        href={project_info.github_link}
+                        target="_blank"
+                        className="dark:text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        GitHub
+                      </a>
+                      <a
+                        href={project_info.live_link}
+                        target="_blank"
+                        className="dark:text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        Live Demo
+                      </a>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </SwiperSlide>
             ))}

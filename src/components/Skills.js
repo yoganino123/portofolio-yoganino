@@ -52,6 +52,31 @@ const Skills = () => {
       name: "Dart",
       count: 50,
     },
+    {
+      logo: "cube-outline",
+      name: "Next.js",
+      count: 50,
+    },
+    {
+      logo: "cube-outline",
+      name: "SQL Server",
+      count: 50,
+    },
+    {
+      logo: "cube-outline",
+      name: "IIS",
+      count: 50,
+    },
+    {
+      logo: "cube-outline",
+      name: "PM2",
+      count: 50,
+    },
+    {
+      logo: "cube-outline",
+      name: "Figma",
+      count: 50,
+    },
   ];
   return (
     <section id="skills" className="py-10  relative">
